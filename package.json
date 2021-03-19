@@ -8,7 +8,6 @@
     "prebuild": "yarn re:build",
     "start": "vite preview",
     "build": "vite build",
-    "test": "jest",
     "re:build": "bsb -make-world -clean-world",
     "re:watch": "bsb -make-world -clean-world -w"
   },
