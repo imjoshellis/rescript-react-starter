@@ -1,6 +1,6 @@
 {
   "bs-dependencies": ["@rescript/react"],
-  "bsc-flags": ["-bs-super-errors", "-open Belt"],
+  "bsc-flags": ["-open Belt"],
   "gentypeconfig": {
     "language": "untyped"
   },
@@ -14,14 +14,17 @@
   ],
   "ppx-flags": [],
   "reason": {
-    "react-jsx": 3
+    "react-jsx": 3,
+    "refmt": 3
   },
-  "refmt": 3,
   "sources": [
     {
       "dir": "src",
       "subdirs": true
     }
   ],
-  "suffix": ".bs.js"
+  "suffix": ".bs.js",
+  "warnings": {
+    "error": "+27"
+  }
 }
